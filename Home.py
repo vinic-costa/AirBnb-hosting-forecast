@@ -4,9 +4,9 @@ import pydeck as pdk
 import streamlit as st
 
 
-BASE_DADOS_HOSPEDAGEM = "./dados/dados_filtrados_2023_12.parquet"
-BASE_BAIRROS = "./dados/bairros_e_regioes.csv"
-MODELO = "./modelos/modelo_apresentacao.pkl"
+BASE_DADOS_HOSPEDAGEM = "dados/dados_filtrados_2023_12.parquet"
+BASE_BAIRROS = "dados/bairros_e_regioes.csv"
+MODELO = "modelos/modelo_apresentacao.pkl"
 
 
 @st.cache_data
