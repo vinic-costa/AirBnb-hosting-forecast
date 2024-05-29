@@ -9,6 +9,9 @@ from io import BytesIO
 import requests
 from sentiment import *
 
+st.set_page_config(page_title="AirBnb HF", page_icon="img/Homeico.png")
+
+
 # Set up header and brief description
 with st.container():
     st.title('Airbnb Hosting Forecast')
@@ -78,7 +81,7 @@ with col2:
     run_preds = st.button('Run the model')
     if run_preds:    
         # Load AI model
-        with open('Deployment/xgb_reg.pkl', 'rb') as f:
+        with open('xgb_reg.pkl', 'rb') as f:
             xgb_model = pickle.load(f)
             
         # One-hot encoding amenities
@@ -187,9 +190,5 @@ st.markdown('This a Data Science project unaffiliated with Airbnb')
 st.markdown('Note that the predicted price is the amount hosts charge **per night**!')
 st.markdown('Prediction accuracy is limited to listings in **Los Angeles** from **summer 2022**')
 st.markdown('Sentiment Analysis prediction is restricted to one request due to limited compute resources')
-transformer = 'https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest'
-st.markdown('The deployed NLP model is the transformer [RoBERTa](%s)' % transformer)
-thesis = 'https://github.com/jose-jaen/Airbnb'
-st.markdown('Feel free to check the entirety of my Bachelor Thesis [here](%s)' % thesis)
-linkedin = 'https://www.linkedin.com/in/jose-jaen/'
+linkedin = 'https://www.linkedin.com/in/vinic-costa/'
 st.markdown('Reach out to [José Jaén Delgado](%s) for any questions' % linkedin)

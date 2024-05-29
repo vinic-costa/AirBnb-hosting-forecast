@@ -1,67 +1,54 @@
-# Airbnb Price Prediction :house:
+# Airbnb HF APP
 
-Looking for a fair-priced Airbnb listing to book? 
+Welcome to Airbnb HF APP
 
-Are you a real estate firm or Airbnb host seeking to set competitive prices?
+Airbnb Hosting Forecast APP is the premier tool for predicting Airbnb rental prices with precision. Whether you're a real estate firm or an Airbnb host, this app is designed to help set competitive prices by leveraging advanced AI technology.
 
-Artificial Intelligence is surely the way to go! :robot:
+Features:
 
-In this Quantitative Economics Bachelor Thesis, Machine Learning and Deep Learning algorithms are used to accurately predict Airbnb rental prices.
+- Accurate Price Predictions: Utilize Machine Learning and Deep Learning algorithms to forecast rental prices based on a variety of listing characteristics, including capacity, number of beds, bathrooms, and more.
 
-Two datasets for Los Angeles city are retrieved from [Inside Airbnb](http://insideairbnb.com/): listings data and the reviews dataset.
+- Comprehensive Data Analysis: The app combines data from multiple sources, using listings and reviews datasets to provide a holistic view of the market.
 
-Combining custom functions, transfer learning and Open Source AI frameworks such as scikit-learn, TensorFlow and PyTorch, several AI models are built to help economic agents make informed decisions.
+- Cutting-edge AI Models: Built with frameworks like scikit-learn, TensorFlow, and PyTorch, the models incorporate transfer learning and custom functions to deliver reliable predictions.
 
-A Bayesian perspective is taken to perform statistical inference, hyperparameter tuning and data modeling.
+- Statistical Inference & Hyperparameter Tuning: Employ a Bayesian perspective to refine models through statistical inference and optimal hyperparameter selection.
 
-Additionally, XAI methods are used to overcome the black box problem of AI algorithms.
+- Explainable AI (XAI): Overcome the black box problem with methods that make AI predictions transparent and understandable.
 
-# Price Prediction App
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://airbnb-prices.streamlit.app/)
+---
 
-Click on the icon above to acces the Airbnb Price Prediction Web App!
+## Airbnb Hosting Forecast Tool
 
-# Bachelor Thesis Document
+Simulate real estate market asset valuations with AI! Provide data about your Airbnb listing and get instant predictions.
 
-The link below gives access to the thesis explaining all Machine Learning, XAI and Statistical Inference techniques. 
+- Listing Characteristics: Input details such as maximum capacity, number of beds, bathrooms, bedrooms, room type, and minimum number of nights to get tailored price predictions.
+- Amenities & Instant Booking: Specify available amenities and whether the listing can be instantly booked to further refine the forecast.
 
-- [Thesis Document](https://github.com/jose-jaen/Airbnb/blob/main/Project/Thesis.pdf)
+---
 
-# General Code
+## Easy-to-Use Interface
 
-Since Python code has been divided into multiples files, the one below combined all the programmed functions for retrieving relevant results.
+The user-friendly Streamlit app allows seamless access to the Airbnb Price Prediction tool. Simply click on the icon to start predicting and setting optimal prices for your listings.
 
-- [Project Code](https://github.com/jose-jaen/Airbnb/blob/main/Project/airbnb_project.py)
+---
 
-# Preprocessing and Responsible AI
+## Advanced AI Techniques
 
-From creating and modifying features to opening the black box problem of AI, all Data Mining algorithms can be found in the following link.
+- Machine Learning Models: Includes Bayesian Ridge Regression, Elastic Net Regression, Random Forest, Bayesian Random Forest, and XGBoost.
+Deep Learning Models: Utilizes Artificial Neural Networks and Bayesian Neural Networks for enhanced prediction accuracy.
+- Bayesian Optimization: Implements the TPE algorithm for hyperparameter tuning to ensure the best model performance.
 
-- [Data Cleaning, Feature Engineering & XAI](https://github.com/jose-jaen/Airbnb/blob/main/Functions/general_functions.py)
+---
 
-# NLP and CV
+## Home Page 
 
-NLP and Computer Vision algorithms used on the reviews and listings dataset, respectively. 
+<img width="876" alt="Batch Prediction" src="./img/Home.png">
 
-VADER, a sentiment analysis tool was tweaked so as to adapt it to Airbnb data.
+---
 
-For CV, a pretrained Deep Learning model called deepface was utilized.
-
-- [NLP algorithms](https://github.com/jose-jaen/Airbnb/blob/main/Functions/nlp_functions.py)
-
-- [Computer Vision algorithms](https://github.com/jose-jaen/Airbnb/blob/main/Functions/cv_functions.py)
-
-# Machine Learning and Deep Learning
-
-AI algorithms for predicting prices. In the ML part, Bayesian Ridge Regression, Elastic Net Regression, Random Forest, Bayesian Random Forest,
-and XGBoost were used.
-
-For DL, Artificial Neural Networks and Bayesian Neural Networks were built. 
-
-Note that TPE algorithm (Bayesian Optimization) was used to select the best performing hyperparameters.
-
-- [Machine Learning modeling](https://github.com/jose-jaen/Airbnb/blob/main/Functions/ml_models.py)
-
-- [Deep Learning modeling](https://github.com/jose-jaen/Airbnb/blob/main/Functions/dl_models.py)
-
-- [Bayesian Random Forest adaption](https://github.com/jose-jaen/Airbnb/blob/main/Functions/_forest.py)
+<div align="center">
+<i>Contato</i><br> 
+<br>
+<a href="https://www.linkedin.com/in/vinic-costa/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</div>
