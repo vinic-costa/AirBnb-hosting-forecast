@@ -154,6 +154,5 @@ st.subheader('About')
 st.markdown('This a Data Science project unaffiliated with Airbnb')
 st.markdown('Note that the predicted price is the amount hosts charge **per night**!')
 st.markdown('Prediction accuracy is limited to listings in **Los Angeles** from **summer 2022**')
-st.markdown('Sentiment Analysis prediction is restricted to one request due to limited compute resources')
 linkedin = 'https://www.linkedin.com/in/vinic-costa/'
 st.markdown('Reach out to [Vinicius Costa](%s) for any questions' % linkedin)
