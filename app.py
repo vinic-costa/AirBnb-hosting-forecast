@@ -15,8 +15,7 @@ st.set_page_config(page_title="AirBnb HF", page_icon="img/Homeico.png")
 # Set up header and brief description
 with st.container():
     st.title('Airbnb Hosting Forecast')
-    st.markdown('Simulate real estate market asset valuations with AI!')
-    st.markdown('Provide data about your Airbnb listing and get predictions!')
+    st.markdown("Airbnb HF APP is the premier tool for predicting Airbnb rental prices with precision. Whether you're a real estate firm or an Airbnb host, this app is designed to help set competitive prices by leveraging advanced AI technology.")
 
 # Begin new section for listings features
 st.markdown('---')
@@ -191,4 +190,4 @@ st.markdown('Note that the predicted price is the amount hosts charge **per nigh
 st.markdown('Prediction accuracy is limited to listings in **Los Angeles** from **summer 2022**')
 st.markdown('Sentiment Analysis prediction is restricted to one request due to limited compute resources')
 linkedin = 'https://www.linkedin.com/in/vinic-costa/'
-st.markdown('Reach out to [José Jaén Delgado](%s) for any questions' % linkedin)
+st.markdown('Reach out to [Vinicius Costa](%s) for any questions' % linkedin)
