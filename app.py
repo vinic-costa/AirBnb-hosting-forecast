@@ -149,39 +149,6 @@ with col2:
         st.info(f"Predicted price is ${round(exp(xgb_model.predict(X_test)), 2)}")
  
 st.markdown('---')
-st.subheader('Sentiment Analysis')
-st.markdown('Write a review and get the predicted sentiment!')
-
-if 'disabled' not in st.session_state:
-    st.session_state['disabled'] = False
-
-    
-def disable():
-    st.session_state['disabled'] = True
-
-    
-user_input = st.text_input(
-    'Introduce your own review!', 
-    disabled=st.session_state.disabled, 
-    on_change=disable
-)
-
-run_sent = st.button('Estimate sentiment')
-
-if run_sent:
-    # Load transformer for sentiment analysis
-    model, tokenizer, config = load_model()
-    text = preprocess(user_input)
-    encoded_input = tokenizer(text, return_tensors='pt')
-    output = model(**encoded_input)
-    scores = output[0][0].detach().numpy()
-    scores = softmax(scores)
-
-    # Print labels and scores
-    ranking = np.argsort(scores)
-    ranking = ranking[::-1]
-    sentiment = config.id2label[ranking[0]]
-    st.info(f'Predicted sentiment is {sentiment}')
 
 st.markdown('---')
 st.subheader('About')
