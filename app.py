@@ -7,7 +7,6 @@ from math import exp
 from scipy import stats
 from io import BytesIO
 import requests
-from sentiment import *
 
 st.set_page_config(page_title="AirBnb HF", page_icon="img/Homeico.png")
 
