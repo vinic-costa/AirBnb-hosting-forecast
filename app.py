@@ -80,7 +80,7 @@ with col2:
     run_preds = st.button('Run the model')
     if run_preds:    
         # Load AI model
-        with open('xgb_reg.pkl', 'rb') as f:
+        with open('model.pkl', 'rb') as f:
             xgb_model = pickle.load(f)
             
         # One-hot encoding amenities
